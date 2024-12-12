@@ -1,0 +1,141 @@
+:root {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(174, 72%, 56%);
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 29rem;
+  color: hsl(0, 0%, 100%);
+  margin: auto;
+  height: auto;
+  background: linear-gradient(135deg, hsl(210, 50%, 40%), hsl(200, 50%, 70%));
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.input-group input {
+  width: 10rem;
+  height: 3.75rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  outline: none;
+  border-radius: calc(3.75 / 2 * 1rem);
+  padding: 10px 25px;
+  color: #555;
+  font-size: 1rem;
+  margin-right: 1rem;
+  flex: 1;
+}
+
+.input-group input:focus {
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+.input-group button {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+.input-group button:active {
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.input-group button img {
+  width: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.weather {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-icon {
+  width: 10.5rem;
+  margin-top: 2rem;
+}
+
+.weather h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col img {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+
+.error {
+  color: hsl(0, 100%, 50%);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  display: none;
+  position: absolute;
+  top: 5.5rem;
+  left: 2.3rem;
+}
+
+.error.visible {
+  display: block;
+}

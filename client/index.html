@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="search">
+          <div class="input-group">
+            <input
+              aria-label="Search input"
+              type="text"
+              placeholder="Enter a city name"
+            />
+            <button aria-label="Search">
+              <img src="img/search.png" alt="search icon" />
+            </button>
+          </div>
+          <div class="error">
+            <p>Invalid city name</p>
+          </div>
+        </div>
+        <div class="weather">
+          <img src="img/rain.png" class="weather-icon" />
+          <h1 class="temp">22°C</h1>
+          <h2 class="city">Utrecht</h2>
+          <div class="details">
+            <div class="col">
+              <img src="img/humidity.png" />
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="img/wind.png" />
+              <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
