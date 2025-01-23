@@ -14,7 +14,7 @@ const apiUrl =
 const PORT = process.env.PORT || 5000;
 
 // Routes
-app.get("/weather", async (req, res) => {
+app.get("/", async (req, res) => {
   const city = req.query.city || "Utrecht";
 
   try {
