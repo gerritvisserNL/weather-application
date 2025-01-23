@@ -1,4 +1,5 @@
-const apiUrl = "http://localhost:5000/weather";
+const apiUrl =
+  "https://www.gerritvisser.nl/portfolio/weather-application/weather";
 
 const searchBox = document.querySelector(".input-group input");
 const searchBtn = document.querySelector(".input-group button");
