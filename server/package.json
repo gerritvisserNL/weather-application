@@ -4,13 +4,12 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "A weather app",
+  "description": "My weather application",
   "devDependencies": {
     "nodemon": "^3.1.7"
   },

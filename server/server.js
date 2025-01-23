@@ -1,10 +1,6 @@
-import dotenv from "dotenv";
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
-
-// Load environment variables
-dotenv.config();
 
 // Setup app
 const app = express();
@@ -18,15 +14,8 @@ const apiUrl =
 const PORT = process.env.PORT || 5000;
 
 // Routes
-
-// Home route
-app.get("/", (req, res) => {
-  res.send("Server runs at port 5000");
-});
-
-// Weather route
 app.get("/weather", async (req, res) => {
-  const city = req.query.city || "Utrecht"; // Default to "Utrecht" if no city is provided
+  const city = req.query.city || "Utrecht";
 
   try {
     const weatherData = await getWeather(city);
@@ -35,8 +24,6 @@ app.get("/weather", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
-// Helper functions
 
 // Fetch weather from OpenWeatherMap API
 const getWeather = async (city) => {
