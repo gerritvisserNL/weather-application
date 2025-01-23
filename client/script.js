@@ -1,5 +1,4 @@
-const apiUrl =
-  "https://www.gerritvisser.nl/portfolio/weather-application/weather";
+const apiUrl = "https://weather-application-41vl.onrender.com";
 
 const searchBox = document.querySelector(".input-group input");
 const searchBtn = document.querySelector(".input-group button");
